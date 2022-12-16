@@ -8,6 +8,14 @@
     --bg-color: #FAEFEA;
     --pri-red: #EB4E3C;
     --pri-font: 'Mountains of Christmas', cursive;
+    --corgi-1: url("https://ssl.gstatic.com/colaboratory-static/common/81dd28fa6e8b60b42ed5b916570ec9d7/v2/common/img/holiday_chocolatechip.gif");
+    --corgi-2: url("https://ssl.gstatic.com/colaboratory-static/common/81dd28fa6e8b60b42ed5b916570ec9d7/v2/common/img/holiday_oreo.gif");
+    --corgi-3: url("https://ssl.gstatic.com/colaboratory-static/common/81dd28fa6e8b60b42ed5b916570ec9d7/v2/common/img/holiday_oreo.gif");
+    --corgi-4: url("https://ssl.gstatic.com/colaboratory-static/common/81dd28fa6e8b60b42ed5b916570ec9d7/v2/common/img/holiday_redvelvet.gif");
+    --basic-corgi-1: url("https://ssl.gstatic.com/colaboratory-static/common/81dd28fa6e8b60b42ed5b916570ec9d7/v2/common/img/chocolatechip.gif");
+    --basic-corgi-2: url("https://ssl.gstatic.com/colaboratory-static/common/81dd28fa6e8b60b42ed5b916570ec9d7/v2/common/img/oreo.gif");
+    --basic-corgi-3: url("https://ssl.gstatic.com/colaboratory-static/common/81dd28fa6e8b60b42ed5b916570ec9d7/v2/common/img/oreo.gif");
+    --basic-corgi-4: url("https://ssl.gstatic.com/colaboratory-static/common/81dd28fa6e8b60b42ed5b916570ec9d7/v2/common/img/redvelvet.gif");
 }
 
 body.dark {
@@ -39,30 +47,37 @@ h1 {
 .fixed-item .leaf-1 {
     left: 0%;
 }
+
 .fixed-item .leaf-1-a {
     left: 35%;
     transform: rotate(20deg);
 }
+
 .fixed-item .leaf-2 {
     left: 5%;
     transform: rotate(120deg);
 }
+
 .fixed-item .leaf-2-a {
     left: 20%;
     transform: rotate(200deg);
 }
+
 .fixed-item .leaf-2-b {
     left: 40%;
     transform: rotate(186deg);
 }
+
 .fixed-item .leaf-2-c {
     left: 53%;
     transform: rotate(137deg);
 }
+
 .fixed-item .leaf-2-d {
     left: 80%;
     transform: rotate(250deg);
 }
+
 .fixed-item .leaf-3 {
     left: 60%;
 }
@@ -75,18 +90,175 @@ h1 {
 .fixed-item .item-1 {
     left: 20%;
 }
+
 .fixed-item .item-2 {
     left: 33%;
 }
+
 .fixed-item .item-3 {
     left: 45%;
 }
+
 .fixed-item .item-4 {
     left: 60%;
 }
+
 .fixed-item .item-5 {
     left: 70%;
 }
+
 .fixed-item .item-6 {
     left: 80%;
+}
+
+/* CORGI */
+.corgi-mode {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 64px;
+}
+.december-holiday-corgi-mode {
+    background-image: var(--corgi-1), var(--corgi-2), var(--corgi-3), var(--corgi-4);
+}
+.basic-corgi-mode {
+    background-image: var(--basic-corgi-1), var(--basic-corgi-2), var(--basic-corgi-3), var(--basic-corgi-4);
+}
+.december-holiday-corgi-mode.corgi-layer-2 {
+    background-image: var(--corgi-2), var(--corgi-1), var(--corgi-4), var(--corgi-3);
+}
+.basic-corgi-mode.corgi-layer-2 {
+    background-image: var(--basic-corgi-2), var(--basic-corgi-1), var(--basic-corgi-4), var(--basic-corgi-3);
+}
+.december-holiday-corgi-mode.corgi-layer-3 {
+    background-image: var(--corgi-4), var(--corgi-3), var(--corgi-1), var(--corgi-2);
+}
+.basic-corgi-mode.corgi-layer-3 {
+    background-image: var(--basic-corgi-4), var(--basic-corgi-3), var(--basic-corgi-1), var(--basic-corgi-2);
+}
+
+.basic-corgi-mode,
+.december-holiday-corgi-mode {
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: corgis 95s linear infinite;
+}
+
+.december-holiday-corgi-mode.corgi-layer-2,
+.corgi-layer-2 {
+    animation: corgis-layer-2 85s linear infinite;
+}
+
+.december-holiday-corgi-mode.corgi-layer-3,
+.corgi-layer-3 {
+    animation: corgis-layer-3 15s linear infinite;
+}
+
+@keyframes corgis {
+    0% {
+        background-position: 120%, -20%, -20%, 120%
+    }
+
+    25% {
+        background-position: -20%, -20%, -20%, 120%
+    }
+
+    30% {
+        background-position: -20%, -20%, -20%, 120%
+    }
+
+    55% {
+        background-position: -20%, 120%, -20%, 120%
+    }
+
+    65% {
+        background-position: -20%, 120%, -20%, 120%
+    }
+
+    95% {
+        background-position: -20%, 120%, 120%, -20%
+    }
+
+    100% {
+        background-position: -20%, 120%, 120%, -20%
+    }
+}
+
+@keyframes corgis-layer-2 {
+    0% {
+        background-position: -20%, 120%, 120%, -20%
+    }
+
+    25% {
+        background-position: 120%, 120%, 120%, -20%
+    }
+
+    30% {
+        background-position: 120%, 120%, 120%, -20%
+    }
+
+    55% {
+        background-position: 120%, -20%, 120%, -20%
+    }
+
+    65% {
+        background-position: 120%, -20%, 120%, -20%
+    }
+
+    95% {
+        background-position: 120%, -20%, -20%, 120%
+    }
+
+    100% {
+        background-position: 120%, -20%, -20%, 120%
+    }
+}
+
+@keyframes corgis-layer-3 {
+    0% {
+        background-position: -20%, 120%, 120%, -20%
+    }
+
+    25% {
+        background-position: 120%, 120%, 120%, -20%
+    }
+
+    30% {
+        background-position: 120%, 120%, 120%, -20%
+    }
+
+    55% {
+        background-position: 120%, -20%, 120%, -20%
+    }
+
+    65% {
+        background-position: 120%, -20%, 120%, -20%
+    }
+
+    95% {
+        background-position: 120%, -20%, -20%, 120%
+    }
+
+    100% {
+        background-position: 120%, -20%, -20%, 120%
+    }
+}
+
+/* BALL */
+.ball {
+    top: -25px;
+    cursor: pointer;
+    animation: bounce 1s;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
+    animation-iteration-count: infinite;
+}
+  
+@keyframes bounce {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        transform: translate3d(0, 25px, 0);
+    }
 }
