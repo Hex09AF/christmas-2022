@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #FAEFEA;
+    --pri-red: #EB4E3C;
+    --pri-font: 'Mountains of Christmas', cursive;
+}
+
+body.dark {
+    --bg-color: #161b22;
+}
+
+body {
+    font-family: var(--pri-font);
+    background: var(--bg-color);
+}
+
+h1 {
+    color: var(--pri-red);
+    font-weight: bold;
+    text-align: center;
+}
+
+.container {
+    max-width: 1440px;
+    margin: auto;
+}
+
+/* LEAF */
+.fixed-item .leaf {
+    position: fixed;
+    top: -100px;
+}
+
+.fixed-item .leaf-1 {
+    left: 0%;
+}
+.fixed-item .leaf-1-a {
+    left: 35%;
+    transform: rotate(20deg);
+}
+.fixed-item .leaf-2 {
+    left: 5%;
+    transform: rotate(120deg);
+}
+.fixed-item .leaf-2-a {
+    left: 20%;
+    transform: rotate(200deg);
+}
+.fixed-item .leaf-2-b {
+    left: 40%;
+    transform: rotate(186deg);
+}
+.fixed-item .leaf-2-c {
+    left: 53%;
+    transform: rotate(137deg);
+}
+.fixed-item .leaf-2-d {
+    left: 80%;
+    transform: rotate(250deg);
+}
+.fixed-item .leaf-3 {
+    left: 60%;
+}
+
+/* ITEM */
+.fixed-item .item {
+    position: fixed;
+}
+
+.fixed-item .item-1 {
+    left: 20%;
+}
+.fixed-item .item-2 {
+    left: 33%;
+}
+.fixed-item .item-3 {
+    left: 45%;
+}
+.fixed-item .item-4 {
+    left: 60%;
+}
+.fixed-item .item-5 {
+    left: 70%;
+}
+.fixed-item .item-6 {
+    left: 80%;
+}
