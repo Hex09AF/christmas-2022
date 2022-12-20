@@ -16,15 +16,19 @@
     --basic-corgi-2: url("https://ssl.gstatic.com/colaboratory-static/common/81dd28fa6e8b60b42ed5b916570ec9d7/v2/common/img/oreo.gif");
     --basic-corgi-3: url("https://ssl.gstatic.com/colaboratory-static/common/81dd28fa6e8b60b42ed5b916570ec9d7/v2/common/img/oreo.gif");
     --basic-corgi-4: url("https://ssl.gstatic.com/colaboratory-static/common/81dd28fa6e8b60b42ed5b916570ec9d7/v2/common/img/redvelvet.gif");
+    --text-color: #24292f;
 }
 
 body.dark {
     --bg-color: #161b22;
+    --text-color: #f0f6fc;
 }
 
 body {
     font-family: var(--pri-font);
     background: var(--bg-color);
+    transition: all .2s linear;
+    color: var(--text-color);
 }
 
 h1 {
@@ -261,4 +265,24 @@ h1 {
     to {
         transform: translate3d(0, 25px, 0);
     }
+}
+
+.countdown {
+    font-size: 18rem;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.countdown > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 3ch;
+}
+
+.countdown__text {
+    font-size: 3rem;
 }
