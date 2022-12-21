@@ -18,6 +18,20 @@
 </head>
 
 <body id="root">
+    <div class="guide">
+        <a href="#" id="scroll-guide">
+            <div id="mouse-scroll">
+                <div class="mouse">
+                    <div class="mouse-in"></div>
+                </div>
+                <div>
+                    <span class="down-arrow-1"></span>
+                    <span class="down-arrow-2"></span>
+                    <span class="down-arrow-3"></span>
+                </div>
+            </div>
+        </a>
+    </div>
     <div class="container">
         <div class="fixed-item">
             <img class="leaf leaf-1" src="./images/leaf-1.png" alt="leaf" />
@@ -60,6 +74,10 @@
     <footer id="corgis" class="corgi-mode basic-corgi-mode"></footer>
     <footer id="corgis" class="corgi-mode basic-corgi-mode corgi-layer-2"></footer>
     <footer id="corgis" class="corgi-mode basic-corgi-mode corgi-layer-3"></footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script src="scroll-trigger.js"></script>
 </body>
 
 </html>
