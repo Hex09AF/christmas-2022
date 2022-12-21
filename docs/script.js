@@ -9,7 +9,7 @@ var corgis = document.getElementsByClassName("corgi-mode");
 var isPlay = 0;
 btnToggle.addEventListener("click", function () {
     if (!isPlay) {
-        // audio.play();
+        audio.play();
     } else {
         audio.pause();
     }
