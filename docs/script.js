@@ -2,6 +2,7 @@ var btnToggle = document.getElementById("toggle");
 var body = document.getElementById("root");
 
 var audio = new Audio("./sounds/Jingle-bells-short-intro.mp3");
+audio.volume = 0.5;
 audio.loop = true;
 
 var corgis = document.getElementsByClassName("corgi-mode");
